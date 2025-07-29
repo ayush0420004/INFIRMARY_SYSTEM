@@ -84,8 +84,7 @@ const BookAppointment = () => {
                     className='bg-white rounded-3xl shadow-xl overflow-hidden'
                 >
                     {/* To disable CAPTCHA and redirect */}
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value="https://infirmary-system-2ope.vercel.app/" />
+                    
 
 
                     {activeStep === 1 && (
@@ -185,6 +184,8 @@ const BookAppointment = () => {
                     {activeStep === 3 && (
                     <div className='p-8 text-center'>
                         {/* Hidden inputs for FormSubmit */}
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="https://infirmary-system-2ope.vercel.app/" />
                         <input type="hidden" name="name" value={formData.name} />
                         <input type="hidden" name="phone" value={formData.phone} />
                         <input type="hidden" name="date" value={formData.date} />
