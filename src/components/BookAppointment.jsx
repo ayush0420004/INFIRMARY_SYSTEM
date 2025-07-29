@@ -85,7 +85,8 @@ const BookAppointment = () => {
                 >
                     {/* To disable CAPTCHA and redirect */}
                     <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value={window.location.href} />
+                    <input type="hidden" name="_next" value="https://infirmary-system-2ope.vercel.app/" />
+
 
                     {activeStep === 1 && (
                         <div className='p-8'>
