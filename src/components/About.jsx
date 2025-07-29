@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../assets/about.png'
+import aboutImg from '../assets/About.png'
 import { FaUserMd } from 'react-icons/fa'
 
 const About = () => {
